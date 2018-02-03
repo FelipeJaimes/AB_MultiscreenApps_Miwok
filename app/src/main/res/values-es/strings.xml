@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Miwok</string>
+    <string name="category_phrases">Frases</string>
+    <string name="category_colors">Colores</string>
+    <string name="category_numbers">Numeros</string>
+    <string name="category_family">Familia</string>
+    <string name="string_father">padre</string>
+    <string name="string_mother">madre</string>
+    <string name="string_son">hijo</string>
+    <string name="string_daughter">hija</string>
+    <string name="string_older_brother">hermano mayor</string>
+    <string name="string_younger_brother">hermano menor</string>
+    <string name="string_older_sister">hermana mayor</string>
+    <string name="string_younger_sister">hermana menor</string>
+    <string name="string_grandmother">abuela</string>
+    <string name="string_grandfather">abuelo</string>
+    <string name="string_red">rojo</string>
+    <string name="string_green">verde</string>
+    <string name="string_brown">marron</string>
+    <string name="string_gray">gris</string>
+    <string name="string_black">negro</string>
+    <string name="string_white">blanco</string>
+    <string name="string_mustard_yellow">amarillo mostaza</string>
+    <string name="string_dusty_yellow">amarillo polvoriento</string>
+    <string name="string_where_are_you_going">A donde vas?</string>
+    <string name="string_what_is_your_name">Como te llamas?</string>
+    <string name="string_my_name_is">Mi nombre es...</string>
+    <string name="string_how_are_you_feeling">Como te sientes?</string>
+    <string name="string_im_feeling_good">Me siento bien.</string>
+    <string name="string_are_you_coming">Vienes?</string>
+    <string name="string_yes_im_coming">Si, ya voy.</string>
+    <string name="string_lets_go">Vamos.</string>
+    <string name="string_come_here">Ven aca.</string>
+    <string name="string_im_coming">Ya voy.</string>
+    <string name="one">uno</string>
+    <string name="two">dos</string>
+    <string name="three">tres</string>
+    <string name="four">cuatro</string>
+    <string name="five">cinco</string>
+    <string name="six">seis</string>
+    <string name="seven">siete</string>
+    <string name="eight">ocho</string>
+    <string name="nine">nueve</string>
+    <string name="ten">diez</string>
+</resources>

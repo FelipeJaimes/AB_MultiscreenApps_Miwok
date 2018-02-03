@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView numbers = (TextView) findViewById(R.id.numbers);
-        TextView phrases = (TextView) findViewById(R.id.phrases);
         TextView colors = (TextView) findViewById(R.id.colors);
+        TextView phrases = (TextView) findViewById(R.id.phrases);
         TextView family = (TextView) findViewById(R.id.family);
 
         numbers.setOnClickListener(new View.OnClickListener() {
