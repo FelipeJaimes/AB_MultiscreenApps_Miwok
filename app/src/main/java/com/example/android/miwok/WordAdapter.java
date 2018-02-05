@@ -26,11 +26,19 @@ public class WordAdapter extends ArrayAdapter<Word>{
 
         Word currentWord = getItem(position);
 
+        ImageView imageView =(ImageView) listItemView.findViewById(R.id.image_imageView);
         if(currentWord.getImageResourceId() != null ){
-            ImageView imageView =(ImageView) listItemView.findViewById(R.id.image_imageView);
             imageView.setImageResource(currentWord.getImageResourceId());
-
+            imageView.setVisibility(View.VISIBLE);
+        } else{
+            imageView.setVisibility(View.GONE);
         }
+
+//      BETTER AND WITH CLEANER CODE THIS WAY:
+//        if(currentWord.getImageResourceId() != null ){
+//            ImageView imageView =(ImageView) listItemView.findViewById(R.id.image_imageView);
+//            imageView.setImageResource(currentWord.getImageResourceId());
+//        }
 
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_textView);
         defaultTextView.setText(currentWord.getDefaultTranslation());
