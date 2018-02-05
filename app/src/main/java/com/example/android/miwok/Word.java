@@ -1,5 +1,7 @@
 package com.example.android.miwok;
 
+import android.media.Image;
+
 /**
  * Created by Felipe on 2/2/2018.
  */
@@ -8,6 +10,13 @@ public class Word {
 
     private String mMiwokTranslation;
     private String mDefaultTranslation;
+    private Integer mImageResourceId;
+
+    public Word(String defaultTranslation, String miwokTranslation, Integer imageResourceId) {
+        mMiwokTranslation = miwokTranslation;
+        mDefaultTranslation = defaultTranslation;
+        mImageResourceId = imageResourceId;
+    }
 
     public Word(String defaultTranslation, String miwokTranslation) {
         mMiwokTranslation = miwokTranslation;
@@ -18,16 +27,12 @@ public class Word {
         return mMiwokTranslation;
     }
 
-    public String getDefaultTranslatio() {
+    public String getDefaultTranslation() {
         return mDefaultTranslation;
     }
 
-    public void setMiwokTranslation(String miwokTranslation) {
-        mMiwokTranslation = miwokTranslation;
-    }
-
-    public void setDefaultTranslation(String defaultTranslation) {
-        mDefaultTranslation = defaultTranslation;
+    public Integer getImageResourceId(){
+        return mImageResourceId;
     }
 
 }
