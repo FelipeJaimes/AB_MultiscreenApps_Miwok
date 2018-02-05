@@ -1,7 +1,9 @@
 package com.example.android.miwok;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -25,7 +27,7 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word(getResources().getString(R.string.nine), "wo’e", R.drawable.number_nine));
         words.add(new Word(getResources().getString(R.string.ten), "na’aacha", R.drawable.number_ten));
 
-        WordAdapter adapter= new WordAdapter(this, words);
+        WordAdapter adapter= new WordAdapter(this, words, R.color.category_numbers);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
