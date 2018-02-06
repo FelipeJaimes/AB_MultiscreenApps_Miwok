@@ -11,16 +11,19 @@ public class Word {
     private String mMiwokTranslation;
     private String mDefaultTranslation;
     private Integer mImageResourceId;
+    private Integer mSoundResourceId;
 
-    public Word(String defaultTranslation, String miwokTranslation, Integer imageResourceId) {
+    public Word(String defaultTranslation, String miwokTranslation, Integer imageResourceId, Integer soundResourceId) {
         mMiwokTranslation = miwokTranslation;
         mDefaultTranslation = defaultTranslation;
         mImageResourceId = imageResourceId;
+        mSoundResourceId = soundResourceId;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation) {
+    public Word(String defaultTranslation, String miwokTranslation, Integer soundResourceId) {
         mMiwokTranslation = miwokTranslation;
         mDefaultTranslation = defaultTranslation;
+        mSoundResourceId = soundResourceId;
     }
 
     public String getMiwokTranslation() {
@@ -35,5 +38,18 @@ public class Word {
         return mImageResourceId;
     }
 
+    public Integer getSoundResourceId(){
+        return mSoundResourceId;
+    }
+
+    @Override
+    public String toString() {
+        return "Word{" +
+                "mMiwokTranslation='" + mMiwokTranslation + '\'' +
+                ", mDefaultTranslation='" + mDefaultTranslation + '\'' +
+                ", mImageResourceId=" + mImageResourceId +
+                ", mSoundResourceId=" + mSoundResourceId +
+                '}';
+    }
 }
 
