@@ -1,6 +1,7 @@
 package com.example.android.miwok;
 
 import android.app.Activity;
+import android.media.Image;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,10 +54,14 @@ public class WordAdapter extends ArrayAdapter<Word> {
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_textView);
         miwokTextView.setText(currentWord.getMiwokTranslation());
 
-        //TextContainer associated color
-        View textContainer = listItemView.findViewById(R.id.text_container);
+        //TextContainer and iconImageView associated activity color
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
+
+        View textContainer = listItemView.findViewById(R.id.text_container);
         textContainer.setBackgroundColor(color);
+
+        ImageView iconImageView =(ImageView) listItemView.findViewById(R.id.icon_imageView);
+        iconImageView.setBackgroundColor(color);
 
         return listItemView;
     }
